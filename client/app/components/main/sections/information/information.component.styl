@@ -1,0 +1,110 @@
+@import 'nib'
+
+.likearts-content .information
+	&__item
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+
+	&__link
+		display block
+		color $primary-color-text
+		margin-left 40px
+		font-size 1.6rem
+		&:after
+			content '››'
+			position relative
+			margin-left 5px
+		&--margin
+			margin 0 0 15px 15px
+
+
+.likearts-content .information-header
+	padding 0 30px
+
+	&__line
+		@extend .flex
+		justify-content flex-start
+
+	&__title
+		font-size 4rem
+		margin 30px 0
+		@media screen and (max-width: 1200px)
+			font-size 3rem
+
+.likearts-content .column
+	width 100%
+	height auto
+
+	&--row
+		@extend .flex
+		justify-content space-between
+		align-items stretch
+		@media screen and (max-width: 992px)
+			flex-flow column wrap
+			justify-content space-between
+
+	&--left
+		width 50%
+		background-color #ebebeb
+		@media screen and (max-width: 992px)
+			width 100%
+
+	&--right
+		width 50%
+		background-color $secondary-color
+		@media screen and (max-width: 992px)
+			width 100%
+
+.likearts-content .half-container
+	width 100%
+	padding 30px 0
+	max-width ($container-width / 2) px
+	&--left
+		margin-left auto
+		@media screen and (max-width: 992px)
+			margin 0 auto
+	&--right
+		margin-right auto
+		@media screen and (max-width: 992px)
+			margin 0 auto
+		.information__link
+			color #fff
+		.information-body__date
+			color #fff
+		.information-body__title
+			color #fff
+		.information-body__text
+			color #fff
+		
+
+.likearts-content .information-body
+	padding 0 15px
+
+	&__line
+		@extend .flex
+		justify-content flex-start
+
+	&__pic
+		img
+			min-height 100px
+
+	&__data
+		margin 0 0 0 20px
+
+	&__date
+		color #6e7c89
+
+	&__title
+		color $primary-color-text
+		font-size 2.5rem
+		margin 10px 0
+		@media screen and (max-width: $phone)
+			font-size 1.5rem
+
+	&__text p 
+		margin 17px 0
+
+
+
+

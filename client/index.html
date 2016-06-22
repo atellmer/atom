@@ -7,7 +7,7 @@
 	<title>Atom App</title>
 	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./resources/icons/sprite/sprite.css">
-	<link rel="stylesheet" href="./dist/bundle.css?rev=cebd1d00c174b0e45e4f659392bc3b43">
+	<link rel="stylesheet" href="./dist/bundle.css?rev=471a1cb66cba15c3acd42627dd1cc0be">
 	<!--?rev=@@hash-->
 </head>
 
@@ -20,7 +20,6 @@
 					<div class="container">
 						<div class="header__info">
 							<div class="header__logo">
-								<!--begin-->
 								<div class="logo">
 									<div class="logo__pic"></div>
 									<div class="logo__text">
@@ -28,7 +27,6 @@
 										<span class="logo__sign logo__sign--margin-left">Сталь</span>
 									</div>
 								</div>
-								<!--end-->
 							</div>
 							<div class="header__contact-items">
 								<div class="header__contact-item">
@@ -40,9 +38,7 @@
 									<div class="header__sign header__sign--phone">+7(495) 677-63-68</div>
 								</div>
 								<div class="header__contact-item">
-									<!--begin-->
 									<div class="atm-button">Обратный звонок</div>
-									<!--end-->
 								</div>
 							</div>
 						</div>
@@ -50,7 +46,6 @@
 				</div>
 				<div class="header__row">
 					<nav>
-						<!--begin-->
 						<div class="menu menu--desktop">
 							<div class="container">
 								<div class="menu__items">
@@ -163,7 +158,6 @@
 							</div>
 							<div id="menuOverlay" class="menu__overlay"></div>
 						</div>
-						<!--end-->
 					</nav>
 				</div>
 			</header>
@@ -172,9 +166,15 @@
 			<!--begin-->
 			<section class="content">
 				<!--begin-->
+				<section class="slider">
+
+				</section>
+				<!--end-->
+
+				<!--begin-->
 				<section class="production">
 					<div class="container">
-						<div class="skew"></div>
+						<div class="skew skew--position"></div>
 						<h1 class="production__title">Наша продукция</h1>
 						<div class="production__cards">
 							<div class="row">
@@ -245,17 +245,135 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="production__circle-btn">
-								<span class="production__btn-icon">›</span>
-							</a>
+							<a href="#" class="production__circle-btn"></a>
 							<div class="production__btn">
 								<a href="#" class="atm-link-button atm-link-button--black">Каталог</a>
 							</div>
-							
+
 						</div>
 					</div>
 				</section>
 				<!--end-->
+
+				<!--begin-->
+				<section class="information">
+					<div class="container large-desktop-visible">	
+						<div class="row">
+							<div class="col-md-6">
+								<div class="information-header">
+									<div class="information-header__line">
+										<div class="skew"></div>
+										<a href="#" class="information__link">Все письма</a>
+									</div>
+									<h2 class="information-header__title">Благодарственные письма</h2>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="information-header">
+									<div class="information-header__line">
+										<div class="skew"></div>
+										<a href="#" class="information__link">Все новости</a>
+									</div>
+									<h2 class="information-header__title">Новости</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column column--row">
+						<div class="column column--left">
+							<div class="half-container half-container--left">
+								<div class="large-desktop-hide">
+									<a href="#" class="information__link information__link--margin ">Благодарственные письма</a>
+								</div>
+								<div class="information__item">		
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/avatar.png" class="img-responsive" alt="letter">
+											</div>	
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Михаил Андреевич</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+										<div class="divider"></div>
+									</div>
+								</div>
+								<div class="information__item">		
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/avatar.png" class="img-responsive" alt="letter">
+											</div>	
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Михаил Андреевич</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column column--right">
+							<div class="half-container half-container--right">
+								<div class="large-desktop-hide">
+									<a href="#" class="information__link information__link--margin ">Все новости</a>
+								</div>
+								<div class="information__item">		
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/news-items/news-item-1--mini.png" class="img-responsive" alt="letter">
+											</div>	
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Название новости</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+										<div class="divider"></div>
+									</div>
+								</div>
+								<div class="information__item">		
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/news-items/news-item-1--mini.png" class="img-responsive" alt="letter">
+											</div>	
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Название новости</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<!--end-->
+
 			</section>
 			<!--end-->
 
@@ -265,7 +383,6 @@
 					<div class="container">
 						<div class="footer__info">
 							<div class="footer__logo">
-								<!--begin-->
 								<div class="logo">
 									<div class="logo__pic"></div>
 									<div class="logo__text">
@@ -273,7 +390,6 @@
 										<span class="logo__sign logo__sign--margin-left">Сталь</span>
 									</div>
 								</div>
-								<!--end-->
 							</div>
 							<div class="footer__contact-items">
 								<div class="footer__contact-item">
@@ -284,9 +400,7 @@
 									<div class="footer__sign">Права защищены 2014</div>
 								</div>
 								<div class="footer__contact-item">
-									<!--begin-->
 									<div class="atm-button">Подписаться на нас</div>
-									<!--end-->
 								</div>
 							</div>
 						</div>
@@ -294,7 +408,6 @@
 				</div>
 				<div class="footer__row">
 					<nav>
-						<!--begin-->
 						<div class="menu menu--desktop">
 							<div class="container">
 								<div class="menu__items">
@@ -351,7 +464,6 @@
 								</div>
 							</div>
 						</div>
-						<!--end-->
 					</nav>
 				</div>
 			</footer>
