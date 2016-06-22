@@ -82,10 +82,6 @@ $container-width = 1208px
 	background-repeat repeat
 	color $primary-color-text
 	font-weight 400
-	min-height 100vh
-	@extend .flex
-	flex-flow column wrap
-	justify-content space-between
 	
 a
 	&:hover
@@ -107,5 +103,20 @@ a
 	max-width $container-width
 	margin 0 auto
 
+.likearts-content .main-content
+	min-height 100vh
+	@extend .flex
+	flex-flow column wrap
+	justify-content space-between
+
 .likearts-content .content
 	width 100%
+
+.likearts-content .skew
+	width 80px
+	height 8px
+	background-color $primary-color
+	margin 20px auto
+	&--card-skew
+		margin 10px 0
+		background-color $secondary-color

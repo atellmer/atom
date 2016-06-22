@@ -37,12 +37,18 @@
 			margin 0 20px
 		@media screen and (max-width: $tablet)
 			margin 10px
+		@media screen and (max-width: $phone)
+			flex-flow column wrap
+			margin 0 10px
 
 	&__sign
 		margin 0 10px
 		font-size 1.4rem
 		@media screen and (max-width: $notebook)
 			font-size 1.2rem
+		@media screen and (max-width: $phone)
+			text-align center
+			margin 10px
 		&--phone
 			font-size 1.8rem
 			@media screen and (max-width: $notebook)

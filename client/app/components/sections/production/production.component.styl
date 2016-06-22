@@ -1,0 +1,83 @@
+@import 'nib'
+
+.likearts-content .production
+	padding 45px 0
+	@media screen and (max-width: $phone)
+		padding 10px 0
+
+	&__title
+		font-size 4rem
+		text-align center
+		margin 20px 0
+		@media screen and (max-width: $phone)
+			font-size 2rem
+
+	&__cards
+		position relative
+
+	&__circle-btn
+		display block
+		position absolute
+		top 50%
+		right -100px
+		transform translate(0, -50%)
+		width 74px
+		height 148px
+		@extend .cover
+		background-image url(../resources/img/circle-btn.png)
+		@media screen and (max-width: 1400px)
+			display: none
+
+	&__btn
+		@extend .flex
+		margin 20px 0
+		@media screen and (min-width: 1400px)
+			display none
+
+	&__btn-icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #fff
+		font-size 3rem
+
+.likearts-content .card
+	width 100%
+	height auto
+	min-height 560px
+	padding 40px 30px
+	color #fff
+	margin 10px 0
+	@extend.cover
+	&--1
+		background-image url(../resources/img/production-items/production-item-1.png)
+	&--2
+		background-image url(../resources/img/production-items/production-item-2.png)
+	&--3
+		background-image url(../resources/img/production-items/production-item-3.png)
+	&--4
+		background-image url(../resources/img/production-items/production-item-4.png)
+	@media screen and (max-width: 1200px)
+		padding 20px
+	@media screen and (max-width: $tablet)
+		padding 40px
+		min-height 0
+
+	&__number
+		&--large
+			font-size 3rem
+
+	&__title
+		font-size 3rem
+		margin 10px 0
+		@media screen and (max-width: 1200px)
+			font-size 2.5rem
+
+	&__btn
+		margin 25px 0
+
+
+.likearts-content .col-md-override
+	padding-left 10px
+	padding-right 10px
