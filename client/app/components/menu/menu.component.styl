@@ -23,14 +23,15 @@
 			align-items flex-start
 
 	&__item
-		display block
-		padding 25px 0
+		position relative
+		padding 25px 10px
 		font-size 1.6rem
 		color #fff
 		text-align center
 		&:hover
-			padding 25px 0 22px 0
-			border-bottom 3px solid #5C6BC0
+			background-color $secondary-color
+			.menu__other-items
+				display flex
 		&--active
 			padding 25px 0 22px 0
 			border-bottom 3px solid #5C6BC0
@@ -49,6 +50,9 @@
 			&:hover
 				padding 25px 50px
 				border-bottom 1px solid #039BE5
+
+	a
+		color #fff
 
 	&__body
 		position fixed
@@ -91,6 +95,27 @@
 		top 50%
 		left 50%
 		transform translate(-50%, -50%)
+
+	&__other-items
+		display none
+		position absolute
+		top 72px
+		left 0
+		width 240px
+		height auto
+		background-color rgba(57, 67, 77, 0.9)
+		@extend .flex
+		flex-flow column wrap
+		padding 23px 28px
+
+	&__other-item
+		width 100%
+		text-align left
+		padding 5px 0
+		border-bottom 1px solid #72797f
+		&:hover
+			color $primary-color
+
 
 .likearts-content .js-menu__btn--active
 	color #fff
