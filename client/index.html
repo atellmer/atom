@@ -7,7 +7,7 @@
 	<title>Atom App</title>
 	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./resources/icons/sprite/sprite.css">
-	<link rel="stylesheet" href="./dist/bundle.css?rev=3734d29f7d469efb2d81f89d1afb2e6b">
+	<link rel="stylesheet" href="./dist/bundle.css?rev=1900dcf956a1fcff014907271cab613c">
 	<!--?rev=@@hash-->
 </head>
 
@@ -15,41 +15,130 @@
 	<!--begin-->
 	<header class="header">
 		<div class="container-fluid">
-			<div class="container">
-				<div class="header__info">
-					<div class="header__logo">
-						<!--begin-->
-						<div class="logo">
-							<div class="logo__pic"></div>
-							<div class="logo__text">
-								<span class="logo__sign logo__sign--bold">Атом</span>
-								<span class="logo__sign logo__sign--margin-left">Сталь</span>
+			<div class="header__row">
+				<div class="container">
+					<div class="header__info">
+						<div class="header__logo">
+							<!--begin-->
+							<div class="logo">
+								<div class="logo__pic"></div>
+								<div class="logo__text">
+									<span class="logo__sign logo__sign--bold">Атом</span>
+									<span class="logo__sign logo__sign--margin-left">Сталь</span>
+								</div>
 							</div>
+							<!--end-->
 						</div>
-						<!--end-->
-					</div>
-					<div class="header__contact-items">
-						<div class="header__contact-item">
-							<div class="icon icon-clock header__icon"></div>
-							<div class="header__sign">Режим работы круглосуточно с Пн по Вс</div>
-						</div>
-						<div class="header__contact-item">
-							<div class="icon icon-phone header__icon"></div>
-							<div class="header__sign header__sign--phone">+7(495) 677-63-68</div>
-						</div>
-						<div class="header__contact-item">
-							<div class="atm-button">Обратный звонок</div>
+						<div class="header__contact-items">
+							<div class="header__contact-item">
+								<div class="icon icon-clock header__icon"></div>
+								<div class="header__sign">Режим работы круглосуточно с Пн по Вс</div>
+							</div>
+							<div class="header__contact-item">
+								<div class="icon icon-phone header__icon"></div>
+								<div class="header__sign header__sign--phone">+7(495) 677-63-68</div>
+							</div>
+							<div class="header__contact-item">
+								<!--begin-->
+								<div class="atm-button">Обратный звонок</div>
+								<!--end-->
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="header__row">
+				<nav>
+					<!--begin-->
+					<div class="menu menu--desktop">
+						<div class="container">
+							<div class="menu__items">
+								<a href="#" class="menu__item">
+									О компании
+								</a>
+								<a href="#" class="menu__item">
+									Услуги
+								</a>
+								<a href="#" class="menu__item">
+									Каталог
+								</a>
+								<a href="#" class="menu__item">
+									Доставка
+								</a>
+								<a href="#" class="menu__item">
+									Прайс-лист
+								</a>
+								<a href="#" class="menu__item">
+									Спецпредложения
+								</a>
+								<a href="#" class="menu__item">
+									Инвесторам
+								</a>
+								<a href="#" class="menu__item">
+									Благотворительность
+								</a>
+								<a href="#" class="menu__item">
+									Отзывы
+								</a>
+								<a href="#" class="menu__item">
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="menuBtn" class="menu__btn">
+						<i class="material-icons menu__btn-icon">menu</i>
+					</div>
+					<div class="menu menu--mobile">
+						<div id="menuContent" class="menu__body">
+							<div class="menu__items menu__items--mobile">
+								<a href="#" class="menu__item menu__item--mobile">
+									О компании
+								</a>
+								<a href="#" class="menu__item menu__item--mobile menu__item--active">
+									Услуги
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Каталог
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Доставка
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Прайс-лист
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Спецпредложения
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Инвесторам
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Благотворительность
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Отзывы
+								</a>
+								<a href="#" class="menu__item menu__item--mobile">
+									Контакты
+								</a>
+
+							</div>
+						</div>
+						<div id="menuOverlay" class="menu__overlay"></div>
+					</div>
+					<!--end-->
+				</nav>
+			</div>
+
 		</div>
 	</header>
 	<!--end-->
 
 	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/hammerjs/hammer.min.js"></script>
 	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="./dist/bundle.js?rev=324e63777cae0113d708633836c9cb18"></script>
+	<script src="./dist/bundle.js?rev=db86750f88b9e48ce0b172d02f84497c"></script>
 </body>
 
 </html>

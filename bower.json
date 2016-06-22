@@ -8,6 +8,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "hammerjs": "^2.0.8"
   }
 }

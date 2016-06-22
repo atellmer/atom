@@ -1,0 +1,102 @@
+@import 'nib'
+
+.likearts-content .menu
+	height auto
+
+	&--desktop
+		width 100%
+		background-color $primary-color
+		@media screen and (max-width: $notebook)
+			display none
+
+	&--mobile
+		@media screen and (min-width: $notebook)
+			display:none
+
+	&__items
+		position relative
+		@extend .flex
+		flex-flow row wrap
+		justify-content space-between
+		&--mobile
+			flex-flow column wrap
+			align-items flex-start
+
+	&__item
+		display block
+		padding 25px 0
+		font-size 1.6rem
+		color #fff
+		text-align center
+		&:hover
+			padding 25px 0 22px 0
+			border-bottom 3px solid #5C6BC0
+		&--active
+			padding 25px 0 22px 0
+			border-bottom 3px solid #5C6BC0
+			@media screen and (max-width: $notebook)
+				padding 25px 50px
+				border-bottom 1px solid #039BE5
+				background-color #039BE5
+		&--mobile
+			width 100%
+			text-align left
+			padding 25px 50px
+			font-size 1.3rem
+			border-bottom 1px solid #039BE5
+			&:first-child
+				margin-top 50px
+			&:hover
+				padding 25px 50px
+				border-bottom 1px solid #039BE5
+
+	&__body
+		position fixed
+		top 0
+		left 0
+		width 250px
+		transform translateX(-250px)
+		background-color $primary-color
+		height 100vh
+		z-index 99
+		@extend .transition
+		overflow auto
+
+	&__overlay
+		display none
+		position fixed
+		top 0
+		left 0
+		width 100%
+		height 100vh
+		background-color #000
+		opacity 0.8
+		z-index 98
+		cursor pointer
+
+	&__btn
+		display none
+		position fixed
+		top 10px
+		left 10px
+		padding 24px
+		cursor pointer
+		color $primary-color
+		z-index 100
+		@media screen and (max-width: $notebook)
+			display inherit
+
+	&__btn-icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+.likearts-content .js-menu__btn--active
+	color #fff
+
+.likearts-content .js-is-open
+	transition transform .2s ease-in-out
+	transform translateX(0px)
+	@extend .paper-shadow-z1
+
