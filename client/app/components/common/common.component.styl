@@ -1,0 +1,108 @@
+@import 'nib'
+@import url(https://fonts.googleapis.com/css?family=Open\+Sans:400,300,700,600&subset=latin,cyrillic-ext,cyrillic)
+@import url(https://fonts.googleapis.com/css?family=Exo\+2:400,700,500,300&subset=latin,cyrillic)
+
+
+$bg-color = #fff
+$primary-color = #00a8ff
+$secondary-color = #39434d
+$primary-color-text = #39434d
+
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+$full-hd = 1920px
+
+$container-width = 1208px
+
+
+//helpers
+.no-padding
+	padding 0!important
+	margin 0!important
+	
+.paper-shadow-z1
+	box-shadow 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12)!important
+	
+.paper-shadow-z2
+	box-shadow 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23)!important
+	
+.paper-shadow-z3
+	box-shadow 0 10px 30px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23)!important
+	
+.paper-shadow-z4
+	box-shadow 0 14px 45px rgba(0,0,0,0.25), 0 10px 18px rgba(0,0,0,0.22)!important
+	
+.paper-shadow-z5
+	box-shadow 0 19px 60px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,0.22)!important
+	
+.divider
+	height 1px
+	width 100%
+	border-top 1px solid #E0E0E0
+	
+.cover
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	
+.flex
+	display flex
+	flex-flow row nowrap
+	justify-content center
+	align-items center
+	
+.display-hide
+	display none!important
+	
+.transition
+	transition color .2s ease-in-out
+	
+.cursor-pointer
+	cursor pointer
+	
+.tablet-visible
+	display none
+	@media screen and (max-width: $tablet)
+		display inherit
+		
+.phone-visible
+	display none
+	@media screen and (max-width: $phone)
+		display inherit
+
+.icon
+	display inline-block
+		
+.likearts-content
+	font-family 'Exo 2', sans-serif
+	background $bg-color
+	background-image url('../resources/img/pattern.jpg')
+    background-repeat repeat
+	font-smoothing antialiased
+	overflow-scrolling touch
+	color $primary-color-text
+	font-weight 400
+	image-rendering optimizeQuality
+	text-rendering geometricPrecision
+	
+a
+	&:hover
+		outline none
+		text-decoration none
+	&:active
+		outline none
+		text-decoration none
+	&:focus
+		outline none
+		text-decoration none
+		
+.likearts-content .container-fluid
+	padding 0
+	margin 0
+		
+.likearts-content .container
+	width 100%
+	max-width $container-width
+	margin 0 auto
