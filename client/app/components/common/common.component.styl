@@ -78,15 +78,14 @@ $container-width = 1208px
 		
 .likearts-content
 	font-family 'Exo 2', sans-serif
-	background $bg-color
 	background-image url('../resources/img/pattern.jpg')
-    background-repeat repeat
-	font-smoothing antialiased
-	overflow-scrolling touch
+	background-repeat repeat
 	color $primary-color-text
 	font-weight 400
-	image-rendering optimizeQuality
-	text-rendering geometricPrecision
+	min-height 100vh
+	@extend .flex
+	flex-flow column wrap
+	justify-content space-between
 	
 a
 	&:hover
@@ -107,3 +106,6 @@ a
 	width 100%
 	max-width $container-width
 	margin 0 auto
+
+.likearts-content .content
+	width 100%
