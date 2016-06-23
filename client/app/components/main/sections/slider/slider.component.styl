@@ -1,2 +1,119 @@
 @import 'nib'
 
+.likearts-content .slider
+	position relative
+	@media screen and (max-width: $phone)
+		display none
+
+	&__text-content
+		position absolute
+		top 0
+		left 50%
+		width 100%
+		height 100%
+		transform translate(-50%, 0%)
+		padding 30px 120px
+		@extend .flex
+		flex-flow column wrap
+		justify-content center
+		align-items flex-start
+
+		.skew
+			@media screen and (max-width: 992px)
+				display none
+
+	&__controls
+		position absolute
+		top 50%
+		left 50%
+		width 100%
+		transform translate(-50%, -50%)
+
+	&__btn
+		position absolute
+		width 60px
+		height 60px
+		cursor pointer
+		top 50%
+		transform translateY(-50%)
+		user-select none
+		&--prev
+			left 10px
+		&--next
+			right 10px
+	
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #fff
+		text-shadow 0px 0px 1px #333
+		font-size 8rem
+
+	&__plus
+		position absolute
+		width 60px
+		height 60px
+		user-select none
+		@media screen and (max-width: 992px)
+			display none
+		&--top-left
+			top -16vw
+			left 10px
+		&--top-right
+			top -16vw
+			right 10px
+		&--bottom-right
+			bottom -16vw
+			right 10px
+		&--bottom-left
+			bottom -16vw
+			left 10px
+
+	&__plus-icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #fff
+		text-shadow 0px 0px 1px #333
+		font-size 4rem
+
+	&__link
+		color #fff
+		margin 17px 0
+		font-size 3rem
+		font-weight bold
+		text-transform uppercase
+		text-shadow 0px 0px 1px #333
+		@media screen and (max-width: 1400px)
+			font-size 2rem
+		@media screen and (max-width: 992px)
+			font-size 1.5rem
+		@media screen and (max-width: $tablet)
+			font-size 1.3rem
+
+.likearts-content .carousel-indicators li 
+	width 8px
+	height 8px
+	background-color #fff
+	border 0
+	margin 0 5px
+
+.likearts-content .carousel-indicators .active
+	position relative 
+	width 8px
+	height 8px
+	background-color #fff
+	border 0
+	margin 0 5px
+	&:after
+		content ''
+		position absolute
+		top -6px
+		left -6px
+		width 20px
+		height 20px
+		border-radius 50%
+		border 1px solid #fff

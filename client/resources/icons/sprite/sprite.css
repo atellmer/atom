@@ -16,21 +16,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-clock {
+.icon-chevron-left {
   background-image: url(sprite.png);
   background-position: 0px 0px;
+  width: 27px;
+  height: 49px;
+}
+.icon-chevron-right {
+  background-image: url(sprite.png);
+  background-position: -27px 0px;
+  width: 27px;
+  height: 49px;
+}
+.icon-clock {
+  background-image: url(sprite.png);
+  background-position: -54px -27px;
   width: 22px;
   height: 22px;
 }
 .icon-geo {
   background-image: url(sprite.png);
-  background-position: 0px -22px;
+  background-position: -81px 0px;
   width: 16px;
   height: 24px;
 }
 .icon-phone {
   background-image: url(sprite.png);
-  background-position: -22px 0px;
+  background-position: 0px -49px;
   width: 20px;
   height: 20px;
+}
+.icon-plus {
+  background-image: url(sprite.png);
+  background-position: -54px 0px;
+  width: 27px;
+  height: 27px;
 }
