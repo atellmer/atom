@@ -32,7 +32,7 @@
 		text-align center
 		@media screen and (max-width: 1300px)
 			font-size 1.4rem
-			padding 25px 8px
+			padding 24px 8px 26px 8px
 		&:hover
 			background-color $secondary-color
 			.menu__other-items
@@ -40,6 +40,8 @@
 		&--active
 			padding 23px 14.5px 22px 14.5px
 			border-bottom 3px solid $secondary-color
+			@media screen and (max-width: 1300px)
+				padding 24px 14.5px 23px 14.5px
 		&--mobile
 			width 100%
 			text-align left
