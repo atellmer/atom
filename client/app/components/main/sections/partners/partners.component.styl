@@ -1,0 +1,42 @@
+@import 'nib'
+
+.likearts-content .partners
+	padding 40px 0
+
+	&__title
+		font-size 4rem
+		text-align center
+		margin 20px 0
+
+	&__logotypes
+		@extend .flex
+		flex-flow row wrap
+		justify-content space-between
+		width 70%
+		margin 0 auto
+		padding 30px 0
+		@media screen and (max-width: $phone)
+			justify-content center
+
+	&__btn
+		position absolute
+		width 60px
+		height 60px
+		cursor pointer
+		top 50%
+		transform translateY(-50%)
+		user-select none
+		&--prev
+			left 10px
+		&--next
+			right 10px
+	
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+	&__pic
+		margin 10px
+
