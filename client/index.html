@@ -7,7 +7,7 @@
 	<title>Atom App</title>
 	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./resources/icons/sprite/sprite.css">
-	<link rel="stylesheet" href="./dist/bundle.css?rev=b12907377082cb27b8347aad5dbf0c8d">
+	<link rel="stylesheet" href="./dist/bundle.css?rev=8eb180eff5fe779f0c41aa8ad91755ae">
 	<!--?rev=@@hash-->
 </head>
 
@@ -39,7 +39,7 @@
 									<div class="header__sign header__sign--phone">+7(495) 677-63-68</div>
 								</div>
 								<div class="header__contact-item">
-									<div class="atm-button">Обратный звонок</div>
+									<div class="atm-button" data-modal-trigger="0">Обратный звонок</div>
 								</div>
 							</div>
 						</div>
@@ -462,59 +462,59 @@
 				<section class="partners">
 					<div class="container">
 						<div class="skew skew--position"></div>
-						<h2 class="partners__title">Наши партнеры</h2>				
-							<div id="partners-carousel" class="carousel slide" data-ride="carousel">
-								<div class="carousel-inner" role="listbox">
-									<div class="item active">
-										<div class="partners__logotypes">
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-										</div>
-									</div>
-									<div class="item">
-										<div class="partners__logotypes">
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-											<a href="#">
-												<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
-											</a>
-										</div>
+						<h2 class="partners__title">Наши партнеры</h2>
+						<div id="partners-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="partners__logotypes">
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
 									</div>
 								</div>
-								<a href="#partners-carousel" role="button" data-slide="prev">
-									<div class="partners__btn partners__btn--prev">
-										<i class="icon icon-circle-left partners__icon"></i>
+								<div class="item">
+									<div class="partners__logotypes">
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
+										<a href="#">
+											<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+										</a>
 									</div>
-								</a>
-								<a href="#partners-carousel" role="button" data-slide="next">
-									<div class="partners__btn partners__btn--next">
-										<i class="icon icon-circle-right partners__icon"></i>
-									</div>
-								</a>
-							</div>		
+								</div>
+							</div>
+							<a href="#partners-carousel" role="button" data-slide="prev">
+								<div class="partners__btn partners__btn--prev">
+									<i class="icon icon-circle-left partners__icon"></i>
+								</div>
+							</a>
+							<a href="#partners-carousel" role="button" data-slide="next">
+								<div class="partners__btn partners__btn--next">
+									<i class="icon icon-circle-right partners__icon"></i>
+								</div>
+							</a>
+						</div>
 					</div>
 				</section>
 				<!--end-->
@@ -545,7 +545,7 @@
 									<div class="footer__sign">Права защищены 2014</div>
 								</div>
 								<div class="footer__contact-item">
-									<div class="atm-button">Подписаться на нас</div>
+									<div class="atm-button" data-modal-trigger="1">Подписаться на нас</div>
 								</div>
 							</div>
 						</div>
@@ -614,13 +614,63 @@
 			</footer>
 			<!--end-->
 
+			<!--begin-->
+			<section class="modals">
+				<div class="modals__overlay"></div>
+				<div class="atm-modal" data-modal-target="0">
+					<div data-modal-close class="atm-modal__close js-atm-modal__close">
+						<i class="material-icons atm-modal__icon">clear</i>
+					</div>
+					<div class="atm-modal__body">
+						<div class="atm-modal__content">
+							<div class="skew skew--position"></div>
+							<div class="atm-modal__title">Обратный звонок</div>
+							<form class="atm-modal__form">
+								<div class="input-group atm-modal__input-group">
+									<input type="text" name="name" id="name" class="form-control atm-modal__input" placeholder="Ваше имя:">
+								</div>
+								<div class="input-group atm-modal__input-group">
+									<input type="text" name="phone" id="phone" class="form-control atm-modal__input" placeholder="Ваш телефон:">
+								</div>
+								<div class="input-group atm-modal__input-group">
+									<input type="text" name="time" id="time" class="form-control atm-modal__input" placeholder="Удобное время для звонка:">
+								</div>
+								<div class="atm-modal__btn">
+									<button data-modal-close class="atm-submit">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="atm-modal" data-modal-target="1">
+					<div data-modal-close class="atm-modal__close js-atm-modal__close">
+						<i class="material-icons atm-modal__icon">clear</i>
+					</div>
+					<div class="atm-modal__body">
+						<div class="atm-modal__content">
+							<div class="skew skew--position"></div>
+							<div class="atm-modal__title">Подписаться на новости</div>
+							<form class="atm-modal__form">
+								<div class="input-group atm-modal__input-group">
+									<input type="email" name="email" id="email" class="form-control atm-modal__input" placeholder="Ваш E-mail:">
+								</div>
+								<div class="atm-modal__btn">
+									<button data-modal-close class="atm-submit">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end-->
+
 		</div>
 	</div>
 
 	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="./bower_components/hammerjs/hammer.min.js"></script>
 	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="./dist/bundle.js?rev=9bab131343119416b94c938ac9b41dea"></script>
+	<script src="./dist/bundle.js?rev=515754562443c313f5e3e3373054b82d"></script>
 </body>
 
 </html>
