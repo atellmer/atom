@@ -1,0 +1,40 @@
+@import 'nib'
+
+.likearts-content .atm-pagination
+	
+	&__list
+		list-style-type none
+		@extend .flex
+		justify-content flex-start
+		padding 0
+		@media screen and (max-width: $phone)
+			justify-content center
+
+	&__item
+		margin 0 5px
+		font-size 1.6rem
+		
+	&__item-link
+		color $primary-color-text
+		@extend .transition, .flex
+		&:hover
+			color $primary-color
+		&--active
+			font-weight 700
+			color $primary-color
+		&--prev
+			&:before
+				content ''
+				display inline-block
+				width 13px
+				height 21px
+				@extend .cover
+				background-image: url(../resources/icons/chevron-left--pag.png)
+		&--next
+			&:after
+				content ''
+				display inline-block
+				width 13px
+				height 21px
+				@extend .cover
+				background-image: url(../resources/icons/chevron-right--pag.png)

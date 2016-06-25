@@ -1,0 +1,38 @@
+@import 'nib'
+
+
+.likearts-content .download-links
+	@extend .flex
+	justify-content flex-start
+	@media screen and (max-width: $phone)
+		flex-flow column wrap
+		
+
+	&__item
+		margin 0 30px 0 0
+		font-size 1.6rem
+		color $primary-color-text
+		@extend .transition, .flex
+		@media screen and (max-width: $phone)
+			margin 10px 0
+		&:hover
+			color $primary-color
+		&--pic
+			&:before
+				content ''
+				display inline-block
+				margin 0 10px 0 0
+				width 32px
+				height 37px
+				@extend .cover
+				background-image url(../resources/icons/link-pic.png)
+		&--excel
+			&:before
+				content ''
+				display inline-block
+				margin 0 10px 0 0
+				width 32px
+				height 37px
+				@extend .cover
+				background-image url(../resources/icons/link-excel.png)
+
