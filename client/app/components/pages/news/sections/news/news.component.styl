@@ -14,6 +14,13 @@
 		padding 15px
 		margin 0 0 20px 0
 
+	&__item-anonce
+		cursor pointer
+
+	&__item-detail
+		display none
+		cursor pointer
+
 	&__item-date
 		color #6e7c89
 		@media screen and (max-width: $phone)
@@ -43,5 +50,15 @@
 	&__item-text
 		margin-bottom 15px
 		line-height 1.3
+		&:last-child
+			margin-bottom 0
 		@media screen and (max-width: $phone)
 			text-align justify
+
+	.js-is-open
+		display inherit
+
+	.js-is-hidden
+		display none
+
+
