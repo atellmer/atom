@@ -1,0 +1,62 @@
+@import 'nib'
+
+.likearts-content .catalog
+	padding 35px 0
+
+	&__title
+		font-size 4rem
+		margin 15px 0
+		text-align center
+		@media screen and (max-width: $phone)
+			font-size 2.5rem
+
+	&__items
+		@extend .flex
+		flex-flow row wrap 
+		align-items stretch
+
+	&__item
+		position relative
+		margin 8px 8px 30px 8px
+		color $primary-color-text
+		@extend .transition
+		&:hover
+			color $primary-color
+
+			.catalog__item-pic
+				-webkit-filter contrast(140%)
+				filter contrast(140%)
+				@media screen and (max-width: $tablet)
+					-webkit-filter none
+					filter none
+
+		@media screen and (max-width: $phone)
+			margin 8px
+
+	&__item-title
+		font-size 2rem
+		max-width 180px
+		text-align center
+		margin-top -10px
+		line-height 1.2
+		@media screen and (max-width: $tablet)
+			font-size 1.8rem
+
+	&__item-pic
+		@extend .transition
+		@media screen and (max-width: $tablet)
+			width 80%
+			transform translate(12%, 0)
+
+	&__item-numbers
+		position absolute
+		top 25%
+		left 50%
+		transform translate(-50%, 0)
+
+	&__item-number
+		color #fff
+		&--large
+			font-size 3rem
+			
+		
