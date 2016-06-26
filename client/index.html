@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./bower_components/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="./bower_components/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="./resources/icons/sprite/sprite.css">
-	<link rel="stylesheet" href="./dist/bundle.css?rev=bce663bf82d0efa37533676aa2ccad53">
+	<link rel="stylesheet" href="./dist/bundle.css?rev=653bfe26480c32ac0b40cb920fb2cc92">
 	<!--?rev=@@hash-->
 </head>
 
@@ -56,7 +56,7 @@
 										<div class="menu__item">
 											О компании
 										</div>
-									</a>					
+									</a>
 									<div class="menu__item menu__item--active">
 										<a href="#" class="menu__item-link">Услуги</a>
 										<div class="menu__other-items">
@@ -79,7 +79,7 @@
 											<a href="#" class="menu__other-item">Швеллер</a>
 										</div>
 									</div>
-									
+
 									<a href="#">
 										<div class="menu__item">
 											Доставка
@@ -121,9 +121,9 @@
 						<div id="menuBtn" class="menu__btn">
 							<i class="material-icons menu__btn-icon">menu</i>
 						</div>
-						
+
 						<div class="menu menu--mobile">
-							
+
 							<div id="menuContent" class="menu__body">
 								<div class="menu__items menu__items--mobile">
 									<a href="#" class="menu__item menu__item--mobile">
@@ -160,11 +160,11 @@
 							</div>
 							<div id="menuOverlay" class="menu__overlay"></div>
 						</div>
-						
+
 					</nav>
-					
+
 				</div>
-				
+
 			</header>
 			<!--end-->
 
@@ -172,130 +172,433 @@
 			<div class="content">
 
 				<!--begin-->
-				<section class="catalog">
+				<div class="slider">
+					<div id="main-slider" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+							<li data-target="#main-slider" data-slide-to="1"></li>
+							<li data-target="#main-slider" data-slide-to="2"></li>
+							<li data-target="#main-slider" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="./resources/img/slider/slide-1.jpg" class="slider__pic" alt="slide">
+								<div class="container slider__text-content">
+									<div class="skew"></div>
+									<a href="#" class="slider__link">
+										Гарантируем качество и <br>
+										своевременность поставок<br> 
+										в назначенный срок
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./resources/img/slider/slide-1.jpg" class="slider__pic" alt="slide">
+								<div class="container slider__text-content">
+									<div class="skew"></div>
+									<a href="#" class="slider__link">
+										Комплексное обслуживание клиентов  – <br> 
+										отбор, комплектация, обработка <br>
+										(резка, гибка, обжиг, грунтовка) <br> 
+										и упаковка металлопроката
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./resources/img/slider/slide-1.jpg" class="slider__pic" alt="slide">
+								<div class="container slider__text-content">
+									<div class="skew"></div>
+									<a href="#" class="slider__link">
+										Гибкая ценовая политика <br>
+										и индивидуальный подход <br>
+										каждому клиенту
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./resources/img/slider/slide-1.jpg" class="slider__pic" alt="slide">
+								<div class="container slider__text-content">
+									<div class="skew"></div>
+									<a href="#" class="slider__link">
+										Фонд, учрежденный Диной Корзун и <br>
+										Чулпан Хаматовой, помогает детям с онкогематологическими <br> 
+										и другими тяжелыми заболеваниями <br>
+										в борьбе с их недугами. <br>
+										Компания «Атом-Сталь» вносит <br>
+										свой скромный вклад <br>
+										в здоровое будущее для детей!
+									</a>
+								</div>
+							</div>
+							<div class="container slider__controls">
+								<a href="#main-slider" role="button" data-slide="prev">
+									<div class="slider__btn slider__btn--prev">
+										<i class="icon icon-chevron-left slider__icon"></i>
+									</div>
+								</a>
+								<a href="#main-slider" role="button" data-slide="next">
+									<div class="slider__btn slider__btn--next">
+										<i class="icon icon-chevron-right slider__icon"></i>
+									</div>
+								</a>
+								<div class="slider__plus slider__plus--top-left">
+									<i class="icon icon-plus slider__plus-icon"></i>
+								</div>
+								<div class="slider__plus slider__plus--top-right">
+									<i class="icon icon-plus slider__plus-icon"></i>
+								</div>
+								<div class="slider__plus slider__plus--bottom-right">
+									<i class="icon icon-plus slider__plus-icon"></i>
+								</div>
+								<div class="slider__plus slider__plus--bottom-left">
+									<i class="icon icon-plus slider__plus-icon"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end-->
+
+				<!--begin-->
+				<section class="production">
 					<div class="container">
 						<div class="skew skew--position"></div>
-						<h1 class="catalog__title">Каталог продукции</h1>
-						<div class="catalog__items">
-
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--1.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">01</span>
-									<span class="catalog__item-number">/12</span>
+						<h1 class="production__title">Наша продукция</h1>
+						<div id="production-carousel" class="production__carousel">
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-1.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">01</span>
+									<span class="card__number">/12</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Строительная арматура</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--2.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">02</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Строительная арматура</div>
+								<div class="card__description">
+									Представленный сортовой металлопрокат является незаменимым материалом. Он используется для монтажа железобетонных конструкций различных типов и обеспечивает их прочность, безопасность и долговечность. Именно арматура строительная обуславливает срок службы
+									возводимых объектов.
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Лист</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--3.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">03</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Трубы</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--4.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">04</span>
-									<span class="catalog__item-number">/12</span>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-2.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">02</span>
+									<span class="card__number">/12</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Уголок</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--5.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">05</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Лист</div>
+								<div class="card__description">
+									Представленный металлопрокат имеет широкую сферу применения. Лист стальной используют при строительстве различных объектов, создании продукции (предметов интерьера, малых архитектурных форм и др.).
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Полоса</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--6.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">06</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Вентиляционное оборудование</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--7.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">07</span>
-									<span class="catalog__item-number">/12</span>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-3.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">03</span>
+									<span class="card__number">/12</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Проволока</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--8.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">08</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Трубы</div>
+								<div class="card__description">
+									Представленная продукция является востребованным видом металлопроката. Она широко применяется в различных отраслях промышленности, в строительстве, ЖКХ, сельском хозяйстве и др.
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Балка</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--9.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">09</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Трубопроводная арматура</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--10.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">10</span>
-									<span class="catalog__item-number">/12</span>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-4.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">04</span>
+									<span class="card__number">/12</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Швеллер</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--11.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">11</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Уголок</div>
+								<div class="card__description">
+									Представленный металлопрокат представляет собой металлическое изделие с сечением Г-образной формы.
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Круг</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--12.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">12</span>
-									<span class="catalog__item-number">/12</span>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Квадрат</div>
-							</a>
-							
-						</div>		
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-1.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">05</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Полоса</div>
+								<div class="card__description">
+									Представленный сортовой металлопрокат является незаменимым материалом. Он используется для монтажа железобетонных конструкций различных типов и обеспечивает их прочность, безопасность и долговечность. Именно арматура строительная обуславливает срок службы
+									возводимых объектов.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-2.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">06</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Проволока</div>
+								<div class="card__description">
+									Представленный металлопрокат имеет широкую сферу применения. Лист стальной используют при строительстве различных объектов, создании продукции (предметов интерьера, малых архитектурных форм и др.).
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-3.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">07</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Балка</div>
+								<div class="card__description">
+									Представленная продукция является востребованным видом металлопроката. Она широко применяется в различных отраслях промышленности, в строительстве, ЖКХ, сельском хозяйстве и др.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-4.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">08</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Швеллер</div>
+								<div class="card__description">
+									Представленный металлопрокат представляет собой металлическое изделие с сечением Г-образной формы.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-1.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">09</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Трубопроводная арматура</div>
+								<div class="card__description">
+									Представленный сортовой металлопрокат является незаменимым материалом. Он используется для монтажа железобетонных конструкций различных типов и обеспечивает их прочность, безопасность и долговечность. Именно арматура строительная обуславливает срок службы
+									возводимых объектов.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-2.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">10</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Круг</div>
+								<div class="card__description">
+									Представленный металлопрокат имеет широкую сферу применения. Лист стальной используют при строительстве различных объектов, создании продукции (предметов интерьера, малых архитектурных форм и др.).
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-3.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">11</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Квадрат</div>
+								<div class="card__description">
+									Представленная продукция является востребованным видом металлопроката. Она широко применяется в различных отраслях промышленности, в строительстве, ЖКХ, сельском хозяйстве и др.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+							<div class="card" style="background-image: url(./resources/img/production-items/production-item-4.png)">
+								<div class="card__numbers">
+									<span class="card__number card__number--large">12</span>
+									<span class="card__number">/12</span>
+								</div>
+								<div class="skew skew--card-skew"></div>
+								<div class="card__title">Вентиляционное оборудование</div>
+								<div class="card__description">
+									Представленный металлопрокат представляет собой металлическое изделие с сечением Г-образной формы.
+								</div>
+								<div class="card__btn">
+									<a href="#" class="atm-link-button">Подробнее</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					
 				</section>
 				<!--end-->
 
 				<!--begin-->
-				<section class="edge">
-					
+				<section class="information">
+					<div class="container large-desktop-visible">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="information-header">
+									<div class="information-header__line">
+										<div class="skew"></div>
+										<a href="#" class="information__link">Все письма</a>
+									</div>
+									<h2 class="information-header__title">Благодарственные письма</h2>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="information-header">
+									<div class="information-header__line">
+										<div class="skew"></div>
+										<a href="#" class="information__link">Все новости</a>
+									</div>
+									<h2 class="information-header__title">Новости</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column column--row">
+						<div class="column column--left">
+							<div class="half-container half-container--left">
+								<div class="large-desktop-hide">
+									<a href="#" class="information__link information__link--margin ">Благодарственные письма</a>
+								</div>
+								<div class="information__item">
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/avatar.png" class="img-responsive" alt="letter">
+											</div>
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Михаил Андреевич</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+										<div class="divider"></div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/avatar.png" class="img-responsive" alt="letter">
+											</div>
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Михаил Андреевич</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column column--right">
+							<div class="half-container half-container--right">
+								<div class="large-desktop-hide">
+									<a href="#" class="information__link information__link--margin ">Все новости</a>
+								</div>
+								<div class="information__item">
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/news-items/news-item-1--mini.png" class="img-responsive" alt="letter">
+											</div>
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Название новости</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+										<div class="divider"></div>
+									</div>
+								</div>
+								<div class="information__item">
+									<div class="information-body">
+										<div class="information-body__line">
+											<div class="information-body__pic">
+												<img src="./resources/img/news-items/news-item-1--mini.png" class="img-responsive" alt="letter">
+											</div>
+											<div class="information-body__data">
+												<div class="information-body__date">07.06.2016</div>
+												<div class="information-body__title">Название новости</div>
+											</div>
+										</div>
+										<div class="information-body__text">
+											<p>
+												Разнообразный и богатый опыт реализация намеченных плановых заданий способствует подготовки и реализации модели развития. Не следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение дальнейших направлений развития...
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<!--end-->
+
+				<!--begin-->
+				<section class="partners">
+					<div class="container">
+						<div class="skew skew--position"></div>
+						<h2 class="partners__title">Наши партнеры</h2>
+						<div id="partners-carousel" class="partners__carousel">
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="./resources/img/partners/logo.png" class="partners__pic" alt="logo">
+							</a>
+						</div>
+					</div>
 				</section>
 				<!--end-->
 
@@ -393,8 +696,6 @@
 				</div>
 			</footer>
 			<!--end-->
-
-		
 
 		</div>
 

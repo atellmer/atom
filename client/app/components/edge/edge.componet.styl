@@ -1,0 +1,44 @@
+@import 'nib'
+
+.likearts-content .edge
+	width 100%
+	height auto
+	@extend .cover
+	background-image url(../resources/img/catalog/catalog-edge.png)
+	padding 40px 0
+
+	&__title
+		color #fff
+		font-size 4rem
+		text-align center
+		margin 20px 0
+		@media screen and (max-width: 992px)
+			font-size 3rem
+		@media screen and (max-width: $phone)
+			font-size 2rem
+
+	&__items
+		@extend .flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items stretch
+		@media screen and (max-width: $tablet)
+			justify-content center
+
+	&__item 
+		@extend .flex
+		flex-flow column wrap
+		justify-content space-between
+		margin 10px
+		width calc(25% - 20px)
+		@media screen and (max-width: $tablet)
+			width calc(50% - 20px)
+		@media screen and (max-width: $phone)
+			width calc(100% - 40px)
+			margin 20px
+
+	&__item-text
+		color #fff
+		max-width 250px
+		text-align center
+		margin 15px 0
