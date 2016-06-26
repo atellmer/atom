@@ -9,6 +9,15 @@
 		@media screen and (max-width: $phone)
 			font-size 2.5rem
 
+		&--h3
+			font-size 3rem
+			margin 40px 0
+			@media screen and (max-width: 992px)
+				font-size 2rem
+				margin 15px 0
+			@media screen and (max-width: $phone)
+				text-align center
+
 	&__tabs-header
 		@extend .flex
 		flex-flow row wrap
@@ -37,6 +46,21 @@
 
 	&__tabs-name
 		border-bottom 1px solid $primary-color-text
+
+	&__text-content
+		margin 20px 0
+		@media screen and (max-width: $phone)
+			text-align justify
+
+	&__pic
+		display block
+		max-width 100%
+		height auto
+		float left
+		margin 0 20px 0 0
+		@media screen and (max-width: $phone)
+			float none
+			margin 0 auto
 
 	.table
 		background-color #fff 

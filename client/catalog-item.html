@@ -56,7 +56,7 @@
 										<div class="menu__item">
 											О компании
 										</div>
-									</a>					
+									</a>
 									<div class="menu__item menu__item--active">
 										<a href="#" class="menu__item-link">Услуги</a>
 										<div class="menu__other-items">
@@ -79,7 +79,7 @@
 											<a href="#" class="menu__other-item">Швеллер</a>
 										</div>
 									</div>
-									
+
 									<a href="#">
 										<div class="menu__item">
 											Доставка
@@ -121,9 +121,9 @@
 						<div id="menuBtn" class="menu__btn">
 							<i class="material-icons menu__btn-icon">menu</i>
 						</div>
-						
+
 						<div class="menu menu--mobile">
-							
+
 							<div id="menuContent" class="menu__body">
 								<div class="menu__items menu__items--mobile">
 									<a href="#" class="menu__item menu__item--mobile">
@@ -160,11 +160,11 @@
 							</div>
 							<div id="menuOverlay" class="menu__overlay"></div>
 						</div>
-						
+
 					</nav>
-					
+
 				</div>
-				
+
 			</header>
 			<!--end-->
 
@@ -172,122 +172,229 @@
 			<div class="content">
 
 				<!--begin-->
-				<section class="catalog">
+				<section class="catalog-item">
 					<div class="container">
-						<div class="skew skew--position"></div>
-						<h1 class="catalog__title">Каталог продукции</h1>
-						<div class="catalog__items">
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--1.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">01</span>
-									<span class="catalog__item-number">/12</span>
+						<div class="skew"></div>
+						<h1 class="catalog-item__title">Балка</h1>
+						<div data-tabs-id="0" class="catalog-item__tabs">
+							<div class="catalog-item__tabs-header">
+								<div data-tabs-trigger="0" class="catalog-item__tabs-trigger">
+									<span class="icon icon-tabs catalog-item__tabs-icon"></span>
+									<span class="catalog-item__tabs-name">Двутавровые балки</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Строительная арматура</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--2.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">02</span>
-									<span class="catalog__item-number">/12</span>
+								<div data-tabs-trigger="1" class="catalog-item__tabs-trigger">
+									<span class="icon icon-tabs catalog-item__tabs-icon"></span>
+									<span class="catalog-item__tabs-name">Низколегированные</span>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Лист</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--3.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">03</span>
-									<span class="catalog__item-number">/12</span>
+							</div>
+							<div class="catalog-item__tabs-body">
+								<div data-tabs-target="0" class="catalog-item__tabs-target">
+									<div class="table-responsive caralog-item__table">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Наименование</th>
+													<th>Размер</th>
+													<th>Марка</th>
+													<th>Длина</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Балки двутавровые 70Ш2</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>33 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 70Ш1</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>33 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 70Б1</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>32 100 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 60Ш1</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>32 700 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 60Б2</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 60Б1</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки двутавровые 55Б2</td>
+													<td>55</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="download-links">
+										<a href="#" download class="download-links__item download-links__item--pic">Название файла</a>
+										<a href="#" download class="download-links__item download-links__item--excel">Название файла</a>
+									</div>
+									<nav class="atm-pagination">
+										<ul class="atm-pagination__list">
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--prev"></a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">1</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--active">2</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">3</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">...</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">6</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--next"></a>
+											</li>
+										</ul>
+									</nav>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Трубы</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--4.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">04</span>
-									<span class="catalog__item-number">/12</span>
+								<div data-tabs-target="1" class="catalog-item__tabs-target">
+									<div class="table-responsive caralog-item__table">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Наименование</th>
+													<th>Размер</th>
+													<th>Марка</th>
+													<th>Длина</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Балки низколегированные 70Ш2</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>33 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 70Ш1</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>33 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 70Б1</td>
+													<td>70</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>32 100 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 60Ш1</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>32 700 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 60Б2</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 60Б1</td>
+													<td>60</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+												<tr>
+													<td>Балки низколегированные 55Б2</td>
+													<td>55</td>
+													<td>Ст3</td>
+													<td></td>
+													<td>38 000 р.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="download-links">
+										<a href="#" download class="download-links__item download-links__item--pic">Название файла</a>
+										<a href="#" download class="download-links__item download-links__item--excel">Название файла</a>
+									</div>
+									<nav class="atm-pagination">
+										<ul class="atm-pagination__list">
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--prev"></a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">1</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--active">2</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">3</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">...</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link">6</a>
+											</li>
+											<li class="atm-pagination__item">
+												<a href="#" class="atm-pagination__item-link atm-pagination__item-link--next"></a>
+											</li>
+										</ul>
+									</nav>
 								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Уголок</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--5.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">05</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Полоса</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--6.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">06</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Вентиляционное оборудование</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--7.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">07</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Проволока</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--8.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">08</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Балка</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--9.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">09</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Трубопроводная арматура</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--10.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">10</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Швеллер</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--11.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">11</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Круг</div>
-							</a>
-							<a href="#" class="catalog__item">
-								<img src="./resources/img/catalog/catalog-item--12.png" class="catalog__item-pic" alt="alt">
-								<div class="catalog__item-numbers">
-									<span class="catalog__item-number catalog__item-number--large">12</span>
-									<span class="catalog__item-number">/12</span>
-								</div>
-								<div class="skew skew--position"></div>
-								<div class="catalog__item-title">Квадрат</div>
-							</a>				
-						</div>		
+							</div>
+						</div>
+						<div class="catalog-item__description">
+							<img src="./resources/img/catalog-item/catalog-item.png" class="catalog-item__pic" alt="alt">
+							<div class="catalog-item__text-content">
+								<p>
+									В ассортименте ООО «Атом-СТАЛЬ» представлены двутавровые балки. Реализуемый металлопрокат вы можете купить на выгодных условиях. Мы предлагаем всю продукцию по оптимальной стоимости.
+								</p>
+								<h3 class="catalog-item__title--h3">
+									Особенности представленных балок. <br> Реализуемый прокат отличается массой достоинств.
+								</h3>
+								<p>
+									Высокая надежность. Двутавровые балки успешно конкурируют с многими другими разновидностями продукции. Они отличаются высокой прочностью и жесткостью. Относительно небольшой вес. Двутавровая конструкция максимально износостойка, но при этом проста в перевозке. Легкость установки. Монтаж металлических изделий осуществляется в кратчайшие сроки с использованием сварки. Также при соединении отдельных элементов применяются заклепки и болты. Универсальность. Благодаря небольшому весу, прочности и износостойкости прокат нашел широкое применение при монтаже помещений мансардного типа, сооружении стропильных систем, возведении кровли и др. Двутавровая конструкция может стать основой домов, выполненных из натурального дерева, например. Специальные изделия колонного типа незаменимы при возведении мостов и колонн. Также они участвуют в армировании. Доступность. Цена проката в Москве и других городах относительно невысока.
+								</p>
+							</div>
+						</div>
 					</div>
-					
 				</section>
 				<!--end-->
 
@@ -307,8 +414,7 @@
 							<div class="edge__item">
 								<img src="./resources/img/catalog/edge--2.png" class="edge__item-pic" alt="alt">
 								<div class="edge__item-text">
-									Доступность продукции. <br>
-									Мы не завышаем цены изделий, предоставляем скидки. Это позволяет вам купить нужные партии проката, не переплачивая.
+									Доступность продукции. <br> Мы не завышаем цены изделий, предоставляем скидки. Это позволяет вам купить нужные партии проката, не переплачивая.
 								</div>
 								<div class="skew"></div>
 							</div>
@@ -322,14 +428,12 @@
 							<div class="edge__item">
 								<img src="./resources/img/catalog/edge--4.png" class="edge__item-pic" alt="alt">
 								<div class="edge__item-text">
-									Доставка. <br>
-									Мы осуществляем <br>
-									ее быстро и грамотно.
+									Доставка. <br> Мы осуществляем <br> ее быстро и грамотно.
 								</div>
 								<div class="skew"></div>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</section>
 				<!--end-->
 
