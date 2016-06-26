@@ -1,0 +1,75 @@
+@import 'nib'
+
+.likearts-content .catalog-item
+	padding 35px 0
+
+	&__title
+		font-size 4rem
+		margin 15px 0
+		@media screen and (max-width: $phone)
+			font-size 2.5rem
+
+	&__tabs-header
+		@extend .flex
+		flex-flow row wrap
+		justify-content flex-start
+		font-size 2rem
+		text-transform uppercase
+		margin 0px 0 20px 0px
+		@media screen and (max-width: 992px)
+			font-size 1.5rem
+		@media screen and (max-width: $phone)
+			justify-content center
+
+	&__tabs-trigger
+		margin 0 50px 0 0
+		cursor pointer
+		@extend .flex
+		@media screen and (max-width: $phone)
+			margin 10px
+
+	&__tabs-target
+		display none
+
+	&__tabs-icon
+		margin 0 10px 0 0
+		@extend .transition
+
+	&__tabs-name
+		border-bottom 1px solid $primary-color-text
+
+	.table
+		background-color #fff 
+
+		thead
+			tr
+				background-color $secondary-color
+				color #fff
+				font-size 2rem
+				font-weight 700
+				@media screen and (max-width: $phone)
+					font-size 1.5rem
+
+		tbody
+			tr
+				&:nth-child(2n)
+					background-color #eee
+
+	.js-tabs-trigger--is-open
+		.catalog-item__tabs-icon
+			transform rotate(90deg)
+
+		.catalog-item__tabs-name
+			color $primary-color
+			font-weight 700
+			border-bottom 1px solid $primary-color
+
+	.js-tabs-trigger--is-hidden
+		.catalog-item__tabs-icon
+			-webkit-filter grayscale(100%)
+			filter grayscale(100%)
+
+		.catalog-item__tabs-name
+			color #9299a0
+			border-bottom 1px solid #9299a0
+	
