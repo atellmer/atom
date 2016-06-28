@@ -12,7 +12,6 @@
 		var hammerMenuBtn = new Hammer(menuBtn);
 		var hammerMenuOverlay = new Hammer(menuOverlay);
 		var click = 0;
-		var body  = document.querySelector('body');
 
 		hammerMenuBtn.on('tap', clickMenuBtnHandler);
 		hammerMenuOverlay.on('tap panleft', clickMenuOverlayHandler);
@@ -32,11 +31,6 @@
 					menuContent.classList.add('js-is-open');
 				}
 				menuOverlay.style.display = 'block';
-				if (isScrollDesktop()) {
-					body.style.paddingRight = '17px';
-				}
-				body.style.overflow = 'hidden';
-				
 			} else {
 				if (menuBtn.classList.contains('js-menu__btn--active')) {
 					menuBtn.classList.remove('js-menu__btn--active');
@@ -45,11 +39,7 @@
 					menuContent.classList.remove('js-is-open');
 				}
 				menuOverlay.style.display = 'none';
-				body.style.overflow = 'auto';	
-				if (isScrollDesktop()) {
-					body.style.paddingRight = '0px';
-				}		
-			}		
+			}
 		}
 
 		function clickMenuOverlayHandler() {
@@ -61,18 +51,6 @@
 				menuContent.classList.remove('js-is-open');
 			}
 			menuOverlay.style.display = 'none';
-			body.style.overflow = 'auto';
-			if (isScrollDesktop()) {
-				body.style.paddingRight = '0px';
-			}
-			
-		}
-
-		function isScrollDesktop() {
-			if (window.innerWidth !== document.documentElement.clientWidth) {
-				return true;
-			}
-			return false;
 		}
 	};
 })();
